@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LogoImageView: View {
+    
     let zodiacImage: String
     let zodiacName: String
     let zodiacSymbol: String

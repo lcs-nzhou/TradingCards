@@ -16,6 +16,7 @@
 		741F60B22B04078B00C3E1D8 /* TradingCardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F60B12B04078B00C3E1D8 /* TradingCardsUITestsLaunchTests.swift */; };
 		741F60BF2B040B3300C3E1D8 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F60BE2B040B3300C3E1D8 /* SwiftUIView.swift */; };
 		741F60C12B0414F000C3E1D8 /* LogoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F60C02B0414F000C3E1D8 /* LogoImageView.swift */; };
+		74B95BBD2B06F63200F259E1 /* EnhancedListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B95BBC2B06F63200F259E1 /* EnhancedListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		741F60B12B04078B00C3E1D8 /* TradingCardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		741F60BE2B040B3300C3E1D8 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		741F60C02B0414F000C3E1D8 /* LogoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImageView.swift; sourceTree = "<group>"; };
+		74B95BBC2B06F63200F259E1 /* EnhancedListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhancedListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				741F609A2B04078A00C3E1D8 /* Preview Content */,
 				741F60BE2B040B3300C3E1D8 /* SwiftUIView.swift */,
 				741F60C02B0414F000C3E1D8 /* LogoImageView.swift */,
+				74B95BBC2B06F63200F259E1 /* EnhancedListItemView.swift */,
 			);
 			path = TradingCards;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			files = (
 				741F60972B04078800C3E1D8 /* ContentView.swift in Sources */,
 				741F60C12B0414F000C3E1D8 /* LogoImageView.swift in Sources */,
+				74B95BBD2B06F63200F259E1 /* EnhancedListItemView.swift in Sources */,
 				741F60952B04078800C3E1D8 /* TradingCardsApp.swift in Sources */,
 				741F60BF2B040B3300C3E1D8 /* SwiftUIView.swift in Sources */,
 			);
