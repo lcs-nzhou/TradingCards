@@ -7,9 +7,20 @@
 
 import SwiftUI
 
+struct Cards {
+    let name : String
+    let imageName: String
+}
+
 struct SwiftUIView: View {
+    let aries = Cards(name: "Aries", imageName: "Aries")
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView{
+            VStack{
+                
+            }
+        }
     }
 }
 

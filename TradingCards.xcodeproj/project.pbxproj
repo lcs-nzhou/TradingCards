@@ -14,6 +14,8 @@
 		741F60A62B04078B00C3E1D8 /* TradingCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F60A52B04078B00C3E1D8 /* TradingCardsTests.swift */; };
 		741F60B02B04078B00C3E1D8 /* TradingCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F60AF2B04078B00C3E1D8 /* TradingCardsUITests.swift */; };
 		741F60B22B04078B00C3E1D8 /* TradingCardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F60B12B04078B00C3E1D8 /* TradingCardsUITestsLaunchTests.swift */; };
+		741F60BF2B040B3300C3E1D8 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F60BE2B040B3300C3E1D8 /* SwiftUIView.swift */; };
+		741F60C12B0414F000C3E1D8 /* LogoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F60C02B0414F000C3E1D8 /* LogoImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		741F60AB2B04078B00C3E1D8 /* TradingCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradingCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		741F60AF2B04078B00C3E1D8 /* TradingCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardsUITests.swift; sourceTree = "<group>"; };
 		741F60B12B04078B00C3E1D8 /* TradingCardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		741F60BE2B040B3300C3E1D8 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		741F60C02B0414F000C3E1D8 /* LogoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				741F60962B04078800C3E1D8 /* ContentView.swift */,
 				741F60982B04078A00C3E1D8 /* Assets.xcassets */,
 				741F609A2B04078A00C3E1D8 /* Preview Content */,
+				741F60BE2B040B3300C3E1D8 /* SwiftUIView.swift */,
+				741F60C02B0414F000C3E1D8 /* LogoImageView.swift */,
 			);
 			path = TradingCards;
 			sourceTree = "<group>";
@@ -258,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				741F60972B04078800C3E1D8 /* ContentView.swift in Sources */,
+				741F60C12B0414F000C3E1D8 /* LogoImageView.swift in Sources */,
 				741F60952B04078800C3E1D8 /* TradingCardsApp.swift in Sources */,
+				741F60BF2B040B3300C3E1D8 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
