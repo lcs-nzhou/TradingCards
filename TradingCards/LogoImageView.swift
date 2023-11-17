@@ -26,17 +26,18 @@ struct LogoImageView: View {
                     .foregroundColor(Color("Dark blue"))
                 VStack {
                     Text("Zodiac Series")
-                        .font(.system(size: 40))
+                        .font(Font.custom("HoeflerText-BlackItalic", size: 50))
                         .foregroundStyle(.yellow)
+                        .bold()
                     Image(zodiacImage)
                         .resizable()
                         .frame(maxWidth: 300, maxHeight: 400)
                     Text(zodiacSymbol)
-                        .font(Font.custom("system", size: 50))
+                        .font(Font.custom("SavoyeLetPlain", size: 50))
                         .foregroundStyle(.yellow)
                         .bold()
                     Text(zodiacName)
-                        .font(.title)
+                        .font(Font.custom("SavoyeLetPlain", size: 40))
                         .foregroundStyle(.yellow)
                 }
             }

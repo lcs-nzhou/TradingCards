@@ -11,7 +11,11 @@ struct SwiftUIView: View {
     
     var body: some View {
         List {
-            
+            NavigationLink(destination: {
+                LogoImageView(zodiacImage: "Aries", zodiacName: "Aries", zodiacSymbol: "♈︎")
+            }, label: {
+                EnhancedListItemView(zodiacSymbol: "♈︎", zodiacName: "Aries")
+            })
         }
     }
 }
