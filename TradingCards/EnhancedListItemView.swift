@@ -27,7 +27,6 @@ struct EnhancedListItemView: View {
                         .bold()
                         .foregroundStyle(.white)
                 }
-                //.padding(.leading, 30)
                 Text(zodiacName)
                 Spacer()
             }
