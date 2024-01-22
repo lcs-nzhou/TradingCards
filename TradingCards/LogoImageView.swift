@@ -25,11 +25,11 @@ struct LogoImageView: View {
                     .frame(width: 330, height: 692)
                     .foregroundColor(Color("Dark blue"))
                     .overlay(VStack{
-                        Text("Zodiac Series")
-                            .font(Font.custom("HoeflerText-BlackItalic", size: 50))
-                            .foregroundStyle(.yellow)
-                            .bold()
-                            .padding(.top)
+                        Image("Background")
+                            .resizable()
+                            .frame(maxHeight: 100)
+                            .mask(Text("Zodiac Series").font(Font.custom("HoeflerText-BlackItalic", size: 50)).bold())
+                        
                         Image(zodiacImage)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
