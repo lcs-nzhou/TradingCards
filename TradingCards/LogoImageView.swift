@@ -24,22 +24,24 @@ struct LogoImageView: View {
                 Rectangle()
                     .frame(width: 330, height: 692)
                     .foregroundColor(Color("Dark blue"))
-                VStack {
-                    Text("Zodiac Series")
-                        .font(Font.custom("HoeflerText-BlackItalic", size: 50))
-                        .foregroundStyle(.yellow)
-                        .bold()
-                    Image(zodiacImage)
-                        .resizable()
-                        .frame(maxWidth: 300, maxHeight: 400)
-                    Text(zodiacSymbol)
-                        .font(Font.custom("SavoyeLetPlain", size: 50))
-                        .foregroundStyle(.yellow)
-                        .bold()
-                    Text(zodiacName)
-                        .font(Font.custom("SavoyeLetPlain", size: 40))
-                        .foregroundStyle(.yellow)
-                }
+                    .overlay(VStack{
+                        Text("Zodiac Series")
+                            .font(Font.custom("HoeflerText-BlackItalic", size: 50))
+                            .foregroundStyle(.yellow)
+                            .bold()
+                            .padding(.top)
+                        Image(zodiacImage)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                        Text(zodiacSymbol)
+                            .font(Font.custom("SavoyeLetPlain", size: 50))
+                            .foregroundStyle(.yellow)
+                            .bold()
+                        Text(zodiacName)
+                            .font(Font.custom("SavoyeLetPlain", size: 40))
+                            .foregroundStyle(.yellow)
+                    })
+             
             }
             
         }
@@ -47,5 +49,5 @@ struct LogoImageView: View {
 }
 
 #Preview {
-    LogoImageView(zodiacImage: ("Aries"), zodiacName: "Aries", zodiacSymbol: "♈︎")
+    LogoImageView(zodiacImage: ("Gemini"), zodiacName: "Aries", zodiacSymbol: "♈︎")
 }
