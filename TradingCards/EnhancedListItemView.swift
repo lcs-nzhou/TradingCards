@@ -21,7 +21,7 @@ struct EnhancedListItemView: View {
                 ZStack {
                     Circle()
                         .frame(height: 50)
-                        .foregroundColor(Color("Dark blue"))
+                        .foregroundColor(Color("DarkBlue"))
                     Text(zodiacSymbol)
                         .font(.largeTitle)
                         .bold()

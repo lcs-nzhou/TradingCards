@@ -12,10 +12,13 @@ struct LogoImageView: View {
     let zodiacImage: String
     let zodiacName: String
     let zodiacSymbol: String
+    let backgoundColor : Color
+    let backgroundColor1 : Color
+    let backgroundColor2 : Color
     
     var body: some View {
         ZStack {
-            Color("Dark blue")
+            RadialGradient(gradient: Gradient(colors: [Color(backgoundColor), Color(backgroundColor1)]), center: UnitPoint.topLeading, startRadius: 300, endRadius: 500)
                 .ignoresSafeArea()
             ZStack {
                 Rectangle()
@@ -23,7 +26,8 @@ struct LogoImageView: View {
                     .foregroundColor(.yellow)
                 Rectangle()
                     .frame(width: 330, height: 692)
-                    .foregroundColor(Color("Dark blue"))
+                    .foregroundColor(Color(backgroundColor2))
+                    
                     .overlay(VStack{
                         Image("Background")
                             .resizable()
@@ -55,5 +59,5 @@ struct LogoImageView: View {
 }
 
 #Preview {
-    LogoImageView(zodiacImage: ("Gemini"), zodiacName: "Aries", zodiacSymbol: "♈︎")
+    LogoImageView(zodiacImage: ("Aries"), zodiacName: "Aries", zodiacSymbol: "♈︎", backgoundColor: .aries, backgroundColor1: .aries1, backgroundColor2: .aries)
 }
