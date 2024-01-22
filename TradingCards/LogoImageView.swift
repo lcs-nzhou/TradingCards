@@ -33,13 +33,19 @@ struct LogoImageView: View {
                         Image(zodiacImage)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                        Text(zodiacSymbol)
-                            .font(Font.custom("SavoyeLetPlain", size: 50))
-                            .foregroundStyle(.yellow)
-                            .bold()
-                        Text(zodiacName)
-                            .font(Font.custom("SavoyeLetPlain", size: 40))
-                            .foregroundStyle(.yellow)
+                        
+                        Image("Background")
+                            .resizable()
+                            .frame(maxHeight: 200)
+                            .mask(VStack{
+                                Text(zodiacSymbol)
+                                    .font(Font.custom("SavoyeLetPlain", size: 50))
+                                    .bold()
+                                Text(zodiacName)
+                                    .font(Font.custom("SavoyeLetPlain", size: 40))
+                                    .bold()
+                            })
+                        
                     })
              
             }
