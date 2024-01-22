@@ -10,6 +10,7 @@ import SwiftUI
 struct EnhancedListItemView: View {
     let zodiacSymbol : String
     let zodiacName : String
+    let backgroundColor : Color
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
@@ -21,7 +22,7 @@ struct EnhancedListItemView: View {
                 ZStack {
                     Circle()
                         .frame(height: 50)
-                        .foregroundColor(Color("DarkBlue"))
+                        .foregroundColor(Color(backgroundColor))
                     Text(zodiacSymbol)
                         .font(.largeTitle)
                         .bold()
@@ -35,5 +36,5 @@ struct EnhancedListItemView: View {
 }
 
 #Preview {
-    EnhancedListItemView(zodiacSymbol: "♈︎", zodiacName: "Aries")
+    EnhancedListItemView(zodiacSymbol: "♈︎", zodiacName: "Aries", backgroundColor: .aries)
 }
