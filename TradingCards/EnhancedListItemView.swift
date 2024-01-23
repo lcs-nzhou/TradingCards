@@ -12,12 +12,7 @@ struct EnhancedListItemView: View {
     let zodiacName : String
     let backgroundColor : Color
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 10)
-                .frame(maxHeight: 75)
-                .padding(.trailing)
-                .padding(.leading)
-                .foregroundColor(.white)
+         
             HStack{
                 ZStack {
                     Circle()
@@ -31,7 +26,7 @@ struct EnhancedListItemView: View {
                 Text(zodiacName)
                 Spacer()
             }
-        }
+        
     }
 }
 

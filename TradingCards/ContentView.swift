@@ -42,12 +42,12 @@ struct ContentView: View {
                     EnhancedListItemView(zodiacSymbol: "♍︎", zodiacName: "Virgo", backgroundColor: .virgo3)
                 })
                 NavigationLink(destination: {
-                    LogoImageView(zodiacImage: "Scorpio", zodiacName: "Scorpio", zodiacSymbol: "♏︎", backgoundColor: .scorpio, backgroundColor1: .scorpio1, backgroundColor2: .scorpio2)
+                    LogoImageView(zodiacImage: "Scorpio", zodiacName: "Scorpio", zodiacSymbol: "♏︎", backgoundColor: .scorpio1, backgroundColor1: .scorpio, backgroundColor2: .scorpio2)
                 }, label: {
                     EnhancedListItemView(zodiacSymbol: "♏︎", zodiacName: "Scorpio", backgroundColor: .scorpio2)
                 })
                 NavigationLink(destination: {
-                    LogoImageView(zodiacImage: "Libra", zodiacName: "Libra", zodiacSymbol: "♎︎", backgoundColor: .libra, backgroundColor1: .libra1, backgroundColor2: .libra3)
+                    LogoImageView(zodiacImage: "Libra", zodiacName: "Libra", zodiacSymbol: "♎︎", backgoundColor: .libra2, backgroundColor1: .libra1, backgroundColor2: .libra3)
                 }, label: {
                     EnhancedListItemView(zodiacSymbol: "♎︎", zodiacName: "Libra", backgroundColor: .libra3)
                 })
@@ -59,8 +59,7 @@ struct ContentView: View {
             }
             .listStyle(.plain)
             .navigationTitle(Text("Zodiac Series"))
-            .background(Color(.cancer3))
-            
+            .background(LinearGradient(gradient: Gradient(colors: [Color.cancer3, Color.cancer1, Color.cancer2]), startPoint: .topLeading, endPoint: .bottomTrailing))
         }
     }
 }
