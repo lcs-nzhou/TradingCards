@@ -57,6 +57,8 @@ struct ContentView: View {
                     EnhancedListItemView(zodiacSymbol: "♒︎", zodiacName: "Aquarius", backgroundColor: .darkBlue)
                 })
             }
+            .listStyle(.plain)
+            .navigationTitle(Text("Zodiac Series"))
         }
     }
 }

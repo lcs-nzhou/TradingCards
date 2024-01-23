@@ -53,7 +53,7 @@ struct LogoImageView: View {
                     })
              
             }
-            
+            .padding(.bottom)
         }
     }
 }
