@@ -59,6 +59,8 @@ struct ContentView: View {
             }
             .listStyle(.plain)
             .navigationTitle(Text("Zodiac Series"))
+            .background(Color(.cancer3))
+            
         }
     }
 }

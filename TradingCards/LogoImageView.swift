@@ -33,10 +33,12 @@ struct LogoImageView: View {
                             .resizable()
                             .frame(maxHeight: 100)
                             .mask(Text("Zodiac Series").font(Font.custom("HoeflerText-BlackItalic", size: 50)).bold())
+                            .shadow(radius: 10)
                         
                         Image(zodiacImage)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
+                            .shadow(radius: 10)
                         
                         Image("Background")
                             .resizable()
@@ -49,7 +51,7 @@ struct LogoImageView: View {
                                     .font(Font.custom("SavoyeLetPlain", size: 40))
                                     .bold()
                             })
-                        
+                            .shadow(radius: 10)
                     })
              
             }
