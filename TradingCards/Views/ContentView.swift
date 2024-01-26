@@ -10,60 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack{
-            List {
+            List(allCard) { currentCard in
                 NavigationLink(destination: {
-                    LogoImageView(sign: aries)
-                },
-                               label: {
-                    EnhancedListItemView(cardName: aries)
-                })
-                NavigationLink(destination: {
-                    LogoImageView(sign: taurus)
-                },
-                               label: {
-                    EnhancedListItemView(cardName: taurus)
-                })
-                NavigationLink(destination: {
-                    LogoImageView(sign: gemini)
-                },
-                               label: {
-                    EnhancedListItemView(cardName: gemini)
-                })
-                NavigationLink(destination: {
-                    LogoImageView(sign: cancer)
-                },
-                               label: {
-                    EnhancedListItemView(cardName: cancer)
-                })
-                NavigationLink(destination: {
-                    LogoImageView(sign: leo)
-                },
-                               label: {
-                    EnhancedListItemView(cardName: leo)
-                })
-                NavigationLink(destination: {
-                    LogoImageView(sign: virgo)
-                },
-                               label: {
-                    EnhancedListItemView(cardName: virgo)
-                })
-                NavigationLink(destination: {
-                    LogoImageView(sign: scorpio)
-                },
-                               label: {
-                    EnhancedListItemView(cardName: scorpio)
-                })
-                NavigationLink(destination: {
-                    LogoImageView(sign: libra)
-                },
-                               label: {
-                    EnhancedListItemView(cardName: libra)
-                })
-                NavigationLink(destination: {
-                    LogoImageView(sign: aquarius)
-                },
-                               label: {
-                    EnhancedListItemView(cardName: aquarius)
+                    LogoImageView(sign: currentCard)
+                }, label: {
+                    EnhancedListItemView(cardName: currentCard)
                 })
             }
             .listStyle(.plain)

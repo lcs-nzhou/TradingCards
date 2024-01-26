@@ -8,7 +8,9 @@
 import Foundation
 import SwiftUI
 
-struct TradingCard {
+struct TradingCard: Identifiable {
+    let id = UUID()
+    
     let zodiacImage: String
     let zodiacName: String
     let zodiacSymbol: String
@@ -107,3 +109,5 @@ let aquarius = TradingCard(
     backgroundColor2: .darkBlue,
     backgroundColor: .darkBlue
 )
+
+let allCard = [aries, taurus, gemini, cancer, leo, virgo, scorpio, libra, aquarius]
