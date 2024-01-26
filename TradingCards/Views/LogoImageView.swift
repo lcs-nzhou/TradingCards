@@ -9,16 +9,11 @@ import SwiftUI
 
 struct LogoImageView: View {
     
-    let zodiacImage: String
-    let zodiacName: String
-    let zodiacSymbol: String
-    let backgoundColor : Color
-    let backgroundColor1 : Color
-    let backgroundColor2 : Color
+    let sign: TradingCard
     
     var body: some View {
         ZStack {
-            RadialGradient(gradient: Gradient(colors: [Color(backgoundColor), Color(backgroundColor1)]), center: UnitPoint.topLeading, startRadius: 300, endRadius: 500)
+            RadialGradient(gradient: Gradient(colors: [Color(sign.backgoundColor), Color(sign.backgroundColor1)]), center: UnitPoint.topLeading, startRadius: 300, endRadius: 500)
                 .ignoresSafeArea()
             ZStack {
                 Rectangle()
@@ -26,7 +21,7 @@ struct LogoImageView: View {
                     .foregroundColor(.yellow)
                 Rectangle()
                     .frame(width: 330, height: 692)
-                    .foregroundColor(Color(backgroundColor2))
+                    .foregroundColor(Color(sign.backgroundColor2))
                     
                     .overlay(VStack{
                         Image("Background")
@@ -35,7 +30,7 @@ struct LogoImageView: View {
                             .mask(Text("Zodiac Series").font(Font.custom("HoeflerText-BlackItalic", size: 50)).bold())
                             .shadow(radius: 10)
                         
-                        Image(zodiacImage)
+                        Image(sign.zodiacImage)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .shadow(radius: 10)
@@ -44,10 +39,10 @@ struct LogoImageView: View {
                             .resizable()
                             .frame(maxHeight: 200)
                             .mask(VStack{
-                                Text(zodiacSymbol)
+                                Text(sign.zodiacSymbol)
                                     .font(Font.custom("SavoyeLetPlain", size: 50))
                                     .bold()
-                                Text(zodiacName)
+                                Text(sign.zodiacName)
                                     .font(Font.custom("SavoyeLetPlain", size: 40))
                                     .bold()
                             })
@@ -61,5 +56,9 @@ struct LogoImageView: View {
 }
 
 #Preview {
-    LogoImageView(zodiacImage: ("Aries"), zodiacName: "Aries", zodiacSymbol: "♈︎", backgoundColor: .aries, backgroundColor1: .aries1, backgroundColor2: .aries)
+    LogoImageView(sign: aries)
+}
+
+#Preview {
+    LogoImageView(sign: taurus)
 }

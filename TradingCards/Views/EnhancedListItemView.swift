@@ -8,22 +8,22 @@
 import SwiftUI
 
 struct EnhancedListItemView: View {
-    let zodiacSymbol : String
-    let zodiacName : String
-    let backgroundColor : Color
+
+    let cardName: TradingCard
+    
     var body: some View {
          
             HStack{
                 ZStack {
                     Circle()
                         .frame(height: 50)
-                        .foregroundColor(Color(backgroundColor))
-                    Text(zodiacSymbol)
+                        .foregroundColor(Color(cardName.backgroundColor))
+                    Text(cardName.zodiacSymbol)
                         .font(.largeTitle)
                         .bold()
                         .foregroundStyle(.white)
                 }
-                Text(zodiacName)
+                Text(cardName.zodiacName)
                 Spacer()
             }
         
@@ -31,5 +31,5 @@ struct EnhancedListItemView: View {
 }
 
 #Preview {
-    EnhancedListItemView(zodiacSymbol: "♈︎", zodiacName: "Aries", backgroundColor: .aries)
+    EnhancedListItemView(cardName: aries)
 }
